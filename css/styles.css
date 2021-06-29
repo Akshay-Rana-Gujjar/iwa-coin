@@ -642,6 +642,9 @@ body {
     .faqs-item {
         max-width: 100%;
     }
+    .cursor {
+        display: none;
+    }
 }
 
 
