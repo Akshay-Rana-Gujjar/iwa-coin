@@ -37,3 +37,19 @@ document.querySelectorAll("a, button, .faqs-item, .button").forEach((elem) => {
     cursor.setAttribute("data-scale", "1");
   });
 });
+
+const playButton = document.getElementById("play-button");
+
+playButton.addEventListener("click", (e)=>{
+
+
+  const videoHtml = `<iframe width="560" height="315" src="https://www.youtube.com/embed/hOc_plnNtzw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+
+  e.target.parentElement.innerHTML = videoHtml;
+
+
+
+  // e.target.remove();
+
+
+});
