@@ -478,7 +478,7 @@ body {
 
 .follow-list-item {
     margin-left: 20px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .email {
