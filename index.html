@@ -14,10 +14,15 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <a class="navbar-logo" href="#">
-                <img src="./images/logo.svg" alt="" />
-                <div class="navbar-logo-text">IWA COIN</div>
-            </a>
+            <div class="navbar-menu-container">
+                <div class="mweb navbar-menu">
+                    <img src="./images/menu.svg" alt="" srcset="">
+                </div>
+                <a class="navbar-logo" href="#">
+                    <img src="./images/logo.svg" alt="" />
+                    <div class="navbar-logo-text">IWA COIN</div>
+                </a>
+            </div>
 
             <div class="navbar-links">
                 <ul class="navbar-links-list">
@@ -25,34 +30,35 @@
                         <a class="nav-link" href="#">IWA COIN</a>
                     </li>
                     <li class="nav-link-item">
-                        <a class="nav-link" href="#">IWA World Wifi</a>
+                        <a class="nav-link" href="#iwa-world-wifi">IWA World Wifi</a>
                     </li>
                     <li class="nav-link-item">
-                        <a class="nav-link" href="#">VIP</a>
+                        <a class="nav-link" href="#vip">VIP</a>
                     </li>
                     <li class="nav-link-item">
-                        <a class="nav-link" href="#">History</a>
+                        <a class="nav-link" href="#history">History</a>
                     </li>
                     <li class="nav-link-item">
-                        <a class="nav-link" href="#">ICO Details</a>
+                        <a class="nav-link" href="#ico-details">ICO Details</a>
                     </li>
                     <li class="nav-link-item">
-                        <a class="nav-link" href="#">Resources</a>
+                        <a class="nav-link" target=_blank href="https://drive.google.com/file/d/1DKryYJ1Im6IU_p-Qfyii2EcVXMSvmVPP/view?usp=sharing">Resources</a>
                     </li>
                     <li class="nav-link-item">
                         <a class="nav-link" href="#">Blog</a>
                     </li>
                     <li class="nav-link-item">
-                        <a class="nav-link navbar-cta" href="buy-now.html">BUY NOW</a>
+                        <a class="nav-link navbar-cta" id="buy-now" href="#">BUY NOW</a>
                     </li>
                 </ul>
             </div>
             <div class="mweb navbar-cta-container">
-                <a href="#" class="mweb navbar-cta">Buy Now</a>
+                <a href="#" class="mweb navbar-cta" id="buy-now-mweb">Buy Now</a>
             </div>
         </div>
     </nav>
     <div class="container about-section rellax" data-rellax-speed="0">
+        <div id="particles-js"></div>
         <div class="about-text-container rellax" data-rellax-speed="3">
             <div class="about-heading">About IWA Coin</div>
             <div class="about-subheading">
@@ -93,7 +99,7 @@
         </div>
     </div>
 
-    <div class="mining-section rellax" data-rellax-speed="0">
+    <div class="mining-section rellax" data-rellax-speed="0" id="iwa-world-wifi">
         <div class="common-heading">
             Project Mining IWA Coin (IWA World WiFi Smart Node)
         </div>
@@ -128,7 +134,7 @@
         </div>
     </div>
 
-    <div class="refferal-section rellax" data-rellax-speed="0">
+    <div class="refferal-section rellax" data-rellax-speed="0" id="vip">
         <div class="common-heading">
             IWA Coin VIP Member from Member Referral program​s
         </div>
@@ -148,11 +154,11 @@
                 </p>
             </div>
 
-            <img src="./images/refferal.png" class="rellax" data-rellax-speed="-0.3" alt="" />
+            <img src="./images/refferal-2.png" class="rellax" data-rellax-speed="-0.3" alt="" />
         </div>
     </div>
 
-    <div class="history-section rellax" data-rellax-speed="0">
+    <div class="history-section rellax" id="history" data-rellax-speed="0">
         <img class="history-svg" src="./images/history.svg" alt="" srcset="" />
         <div class="common-heading rellax" data-rellax-speed="0.1">IWA Coin history</div>
 
@@ -191,7 +197,7 @@
     </div>
 
     <div class="ico-section rellax" data-rellax-speed="0">
-        <div class="common-heading rellax" data-rellax-speed="0.1">ICO Details</div>
+        <div class="common-heading rellax" data-rellax-speed="0.1" id="ico-details">ICO Details</div>
 
         <div class="ico-details-container rellax" data-rellax-speed="0.1">
             <div class="ico-token-distribution">
@@ -411,13 +417,95 @@
             Copyright © | All Right Reserved | 2021
         </div>
     </footer>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script> -->
+
+    <div class="mweb sidebar-container">
+        <div class="sidebar-close button">
+            &#x2715;
+        </div>
+        <ul class="sidebar-links-list">
+            <li class="sidebar-link-item">
+                <a class="sidebar-link" href="#iwa-world-wifi">IWA World Wifi</a>
+            </li>
+            <li class="sidebar-link-item">
+                <a class="sidebar-link" href="#vip">VIP</a>
+            </li>
+            <li class="sidebar-link-item">
+                <a class="sidebar-link" href="#history">History</a>
+            </li>
+            <li class="sidebar-link-item">
+                <a class="sidebar-link" href="#ico-details">ICO Details</a>
+            </li>
+            <li class="sidebar-link-item">
+                <a class="sidebar-link" target=_blank href="https://drive.google.com/file/d/1DKryYJ1Im6IU_p-Qfyii2EcVXMSvmVPP/view?usp=sharing">Resources</a>
+            </li>
+            <li class="sidebar-link-item">
+                <a class="sidebar-link" href="#">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="modal-container">
+        <div class="modal-close button">
+            &#x2715;
+        </div>
+        <div class="buy-now-section">
+            <div class="buy-now-text-container">
+                <div class="common-heading">How to Buy ?</div>
+                <div class="buy-now-subheading">
+                    <h3>Step 1: Create a Wallet</h3>
+                    <p>Download Trust Wallet and create a wallet. Keep your phrase a secret! Never share it with anyone and store it properly! Make sure to copy the contract address below!</p>
+
+                    <p>IWA COIN Address</p>
+                    <p id="wallet-address">0x5f6beFe86080dDF5C464E42f30aD0cC4405B3C9C</p>
+                    <div class="buy-now-cta">
+                        <button class="copy-btn" id="copy-btn" data-clipboard-action="copy" data-clipboard-target="#wallet-address" title="Copy to Clipboard">Copy Address</button>
+                    </div>
+
+                    <h3>Step 2: Add IWA Coin to the Wallet</h3>
+                    <p>Tap the icon in the top-right and search for "IWA Coin". If it's not there, tap "Add Custom Token".<br/> At the top, tap "Ethereum" next to Network, and change it to "Smart Chain". Copy the contract address on this page and put it
+                        in the Contract Address box.<br/><br/> Next, put "IWA Coin" as the name, and the symbol as IWA. Decimals will be 18.<br/><br/> Click "Done" at the top and you should now have IWA Coin added to your wallet!
+                    </p>
+
+                    <h3>Step 3: Buy "Binance Smart Chain" (BSC)</h3>
+                    <p>Tap on "Smart Chain" on the main screen of Trust wallet, then tap "Buy" in the top right. This step may require KYC verification, so have documents ready to prove your identity.<br/><br/> If the transaction won't go through, you may
+                        need to contact your bank to allow international transactions.
+                        <br/><br/> After purchasing, there may be a delay while your transaction is processed. This is normal!
+                    </p>
+
+                    <h3>Step 4: Swap BSC for IWA Coin!</h3>
+                    <p>Once your transaction has been cleared, and you have BSC on your Trust Wallet, Go to DApps (or "Browser" for iPhones) at the bottom of the main screen. If the Browser button is not visible at the bottom for iPhone, open Safari and
+                        in the URL type trust://browser_enable, then return to trust wallet.
+                        <br/><br/> Open the DApps, or Browser, section and find PancakeSwap and open it. Connect your Trust Wallet in the top-right. Scroll down a little to the "Exchange" box Click the icon and set the slippage to 12%. If you want to
+                        give it the best possible chance to clear, increase the deadline. By default it should be set to 20 minutes, which is fine.<br/><br/> Once the slippage is set, and you have the BNB amount set that you wish to swap for IWA Coin
+                        as shown, just click Swap and wait patiently for the transaction to clear. This process may not be instant and can take anywhere from a few minutes up to an hour sometimes, depending on traffic. Once the transaction has been cleared,
+                        you should have IWA Coin in your Trust Wallet!
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./clipboard.js-master/clipboard.js-master/dist/clipboard.min.js"></script>
     <script>
-        // Accepts any class name
-        var rellax = new Rellax('.rellax');
+        var clipboard = new ClipboardJS('.copy-btn');
+
+        const copyButton = document.getElementById("copy-btn");
+
+        copyButton.addEventListener("click", () => {
+            copyButton.innerHTML = "Copied";
+            setTimeout(() => {
+                copyButton.innerHTML = "Copy Address";
+            }, 5000);
+        });
+        particlesJS.load('particles-js', 'config.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
     </script>
 </body>
 
