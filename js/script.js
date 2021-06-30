@@ -16,7 +16,7 @@ window.addEventListener("mousemove", (e) => {
   setPosition(cursor, e);
 });
 // window.addEventListener("scroll", (e) => {
-//   //   setPosition(follower, e);
+  //   //   setPosition(follower, e);
 //   setPosition(cursor, e);
 // });
 
@@ -41,15 +41,15 @@ document.querySelectorAll("a, button, .faqs-item, .button").forEach((elem) => {
 const playButton = document.getElementById("play-button");
 
 playButton.addEventListener("click", (e)=>{
-
-
+  
+  
   const videoHtml = `<iframe width="560" height="315" src="https://www.youtube.com/embed/hOc_plnNtzw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-
+  
   e.target.parentElement.innerHTML = videoHtml;
-
-
-
+  
+  
+  
   // e.target.remove();
-
-
+  
+  
 });
