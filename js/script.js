@@ -66,6 +66,21 @@ const modalCloseBtn = document.querySelector(".modal-close");
 
 modalCloseBtn.addEventListener("click", () => modal.classList.remove("show"));
 
+const resources = document.querySelector(".resources");
+const resourcesMob = document.querySelector(".resources-mob");
+const modal2 = document.querySelector(".modal2-container");
+
+resources.addEventListener("click",(e)=>{
+  e.preventDefault();
+  modal2.classList.add("show");
+});
+resourcesMob.addEventListener("click",(e)=>{
+  e.preventDefault();
+  modal2.classList.add("show");
+});
+const modal2Close = document.querySelector(".modal2-close");
+
+modal2Close.addEventListener("click", () => modal2.classList.remove("show"));
 // (()=>{
 //   smoothscroll.polyfill();
 

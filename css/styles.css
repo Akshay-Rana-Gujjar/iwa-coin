@@ -608,6 +608,65 @@ body {
     background: #131313;
 }
 
+/* resources */
+.modal2-container,
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #272727;
+    overflow-y: auto;
+    transform: translateY(100%);
+    z-index: 11;
+}
+
+.sidebar-container {
+    transform: translateX(-100%);
+}
+
+.sidebar-container.show {
+    transition: transform .5s;
+    transform: translateX(0);
+}
+
+.modal2-container.show {
+    transition: transform .5s;
+    transform: translateY(0);
+}
+
+.modal2-close,
+.sidebar-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px;
+    background: #3e3e3e;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal2-close:hover {
+    background: #131313;
+}
+.buy-now-text-container span{
+    display: block;
+    text-align: left;
+}
+.buy-now-text-container .ppt,.buy-now-text-container .video{
+    padding: 5px 7px;
+    background-color: var(--main-color);
+    margin: 20px 0px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* resources end*/
 .sidebar-links-list {
     padding-top: 50px;
 }
