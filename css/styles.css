@@ -654,11 +654,17 @@ body {
 .modal2-close:hover {
     background: #131313;
 }
+.resources-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
 .buy-now-text-container span{
     display: block;
     text-align: left;
 }
-.buy-now-text-container .ppt,.buy-now-text-container .video{
+.resources-text-container .ppt,.resources-text-container .video{
     padding: 5px 7px;
     background-color: var(--main-color);
     margin: 20px 0px;
